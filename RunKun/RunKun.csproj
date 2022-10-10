@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{358745FB-E3DA-4D46-BCEC-931F66C914A1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RunKun</RootNamespace>
+    <AssemblyName>RunKun</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>appIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="appIcon.ico" />
+    <Content Include="Resources\cat\dark_cat_0.ico" />
+    <Content Include="Resources\cat\dark_cat_1.ico" />
+    <Content Include="Resources\cat\dark_cat_2.ico" />
+    <Content Include="Resources\cat\dark_cat_3.ico" />
+    <Content Include="Resources\cat\dark_cat_4.ico" />
+    <Content Include="Resources\cat\light_cat_0.ico" />
+    <Content Include="Resources\cat\light_cat_1.ico" />
+    <Content Include="Resources\cat\light_cat_2.ico" />
+    <Content Include="Resources\cat\light_cat_3.ico" />
+    <Content Include="Resources\cat\light_cat_4.ico" />
+    <Content Include="Resources\horse\dark_horse_0.ico" />
+    <Content Include="Resources\horse\dark_horse_1.ico" />
+    <Content Include="Resources\horse\dark_horse_10.ico" />
+    <Content Include="Resources\horse\dark_horse_11.ico" />
+    <Content Include="Resources\horse\dark_horse_12.ico" />
+    <Content Include="Resources\horse\dark_horse_13.ico" />
+    <Content Include="Resources\horse\dark_horse_2.ico" />
+    <Content Include="Resources\horse\dark_horse_3.ico" />
+    <Content Include="Resources\horse\dark_horse_4.ico" />
+    <Content Include="Resources\horse\dark_horse_5.ico" />
+    <Content Include="Resources\horse\dark_horse_6.ico" />
+    <Content Include="Resources\horse\dark_horse_7.ico" />
+    <Content Include="Resources\horse\dark_horse_8.ico" />
+    <Content Include="Resources\horse\dark_horse_9.ico" />
+    <Content Include="Resources\horse\light_horse_0.ico" />
+    <Content Include="Resources\horse\light_horse_1.ico" />
+    <Content Include="Resources\horse\light_horse_10.ico" />
+    <Content Include="Resources\horse\light_horse_11.ico" />
+    <Content Include="Resources\horse\light_horse_12.ico" />
+    <Content Include="Resources\horse\light_horse_13.ico" />
+    <Content Include="Resources\horse\light_horse_2.ico" />
+    <Content Include="Resources\horse\light_horse_3.ico" />
+    <Content Include="Resources\horse\light_horse_4.ico" />
+    <Content Include="Resources\horse\light_horse_5.ico" />
+    <Content Include="Resources\horse\light_horse_6.ico" />
+    <Content Include="Resources\horse\light_horse_7.ico" />
+    <Content Include="Resources\horse\light_horse_8.ico" />
+    <Content Include="Resources\horse\light_horse_9.ico" />
+    <Content Include="Resources\kun\dark_kun_0.ico" />
+    <Content Include="Resources\kun\dark_kun_1.ico" />
+    <Content Include="Resources\kun\dark_kun_2.ico" />
+    <Content Include="Resources\kun\dark_kun_3.ico" />
+    <Content Include="Resources\kun\dark_kun_4.ico" />
+    <Content Include="Resources\kun\dark_kun_5.ico" />
+    <Content Include="Resources\kun\dark_kun_6.ico" />
+    <Content Include="Resources\kun\dark_kun_7.ico" />
+    <Content Include="Resources\kun\dark_kun_8.ico" />
+    <Content Include="Resources\kun\light_kun_0.ico" />
+    <Content Include="Resources\kun\light_kun_1.ico" />
+    <Content Include="Resources\kun\light_kun_2.ico" />
+    <Content Include="Resources\kun\light_kun_3.ico" />
+    <Content Include="Resources\kun\light_kun_4.ico" />
+    <Content Include="Resources\kun\light_kun_5.ico" />
+    <Content Include="Resources\kun\light_kun_6.ico" />
+    <Content Include="Resources\kun\light_kun_7.ico" />
+    <Content Include="Resources\kun\light_kun_8.ico" />
+    <Content Include="Resources\parrot\dark_parrot_0.ico" />
+    <Content Include="Resources\parrot\dark_parrot_1.ico" />
+    <Content Include="Resources\parrot\dark_parrot_2.ico" />
+    <Content Include="Resources\parrot\dark_parrot_3.ico" />
+    <Content Include="Resources\parrot\dark_parrot_4.ico" />
+    <Content Include="Resources\parrot\dark_parrot_5.ico" />
+    <Content Include="Resources\parrot\dark_parrot_6.ico" />
+    <Content Include="Resources\parrot\dark_parrot_7.ico" />
+    <Content Include="Resources\parrot\dark_parrot_8.ico" />
+    <Content Include="Resources\parrot\dark_parrot_9.ico" />
+    <Content Include="Resources\parrot\light_parrot_0.ico" />
+    <Content Include="Resources\parrot\light_parrot_1.ico" />
+    <Content Include="Resources\parrot\light_parrot_2.ico" />
+    <Content Include="Resources\parrot\light_parrot_3.ico" />
+    <Content Include="Resources\parrot\light_parrot_4.ico" />
+    <Content Include="Resources\parrot\light_parrot_5.ico" />
+    <Content Include="Resources\parrot\light_parrot_6.ico" />
+    <Content Include="Resources\parrot\light_parrot_7.ico" />
+    <Content Include="Resources\parrot\light_parrot_8.ico" />
+    <Content Include="Resources\parrot\light_parrot_9.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
